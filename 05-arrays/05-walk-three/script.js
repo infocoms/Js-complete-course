@@ -39,6 +39,14 @@
         },
     ];
 
+
+
+    people.forEach(myFunction);
+    function myFunction(index ,item[1][1]) {
+        console.log( index + item );
+    }
+
+
     // your code here
 
 })();

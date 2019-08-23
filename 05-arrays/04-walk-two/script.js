@@ -25,6 +25,12 @@
         "raisin",
         "cerise",
     ];
+    fruits.forEach(myFunction);
+    function myFunction(item) {
+        console.log(item);
+    }
+
+
 
     // your code here
 
