@@ -13,4 +13,8 @@
 
     // your code here
 
+
+   var change = document.querySelectorAll("p.target");
+    change.forEach(x => { x.innerHTML = "owned";})
+
 })();

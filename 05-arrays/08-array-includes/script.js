@@ -11,6 +11,8 @@
 
 (function() {
 
+    document.getElementById("run").addEventListener("click", function () {
+
     var fruits = [
         "pomme",
         "poire",
@@ -27,5 +29,11 @@
     ];
 
     // your code here
+if (fruits.includes("pomme")){
+    console.log("Yes");
+}else {
+    console.log("No");
+}
+    });
 
 })();

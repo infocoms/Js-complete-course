@@ -30,7 +30,7 @@
 
         // your code here
 
-        console.log(fruits[3] );
+        console.log(fruits[3]);
 
 
     });

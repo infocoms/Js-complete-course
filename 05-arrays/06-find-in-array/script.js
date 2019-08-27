@@ -11,6 +11,9 @@
 
 (function() {
 
+    document.getElementById("run").addEventListener("click", function () {
+
+
     var people = [
         {
             firstname: "Bradford",
@@ -89,6 +92,14 @@
         },
     ];
 
-    // your code here
+
+
+        const result = people.find( person => person.firstname === 'Jean', person => person.lastname === 'Dupont');
+        console.log(result.email);
+        console.log("the index of the person is : "+ people.indexOf(result));
+
+
+    });
+
 
 })();

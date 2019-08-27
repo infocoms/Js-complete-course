@@ -11,7 +11,9 @@
 
 (function() {
 
-    var people = [
+    document.getElementById("run").addEventListener("click", function () {
+
+    const people = [
         {
             firstname: "Grenville",
             lastname: "Stive",
@@ -89,6 +91,14 @@
         },
     ];
 
-    // your code here
+
+
+
+        let totalAge = people.map(obj => obj.age).reduce((acc, next) => acc + next);
+            console.log(totalAge);
+
+
+
+    });
 
 })();

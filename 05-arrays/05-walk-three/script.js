@@ -11,6 +11,9 @@
 
 (function() {
 
+
+    document.getElementById("run").addEventListener("click", function () {
+
     var people = [
         {
             firstname: "Garald",
@@ -39,12 +42,13 @@
         },
     ];
 
-
-
     people.forEach(myFunction);
-    function myFunction(index ,item[1][1]) {
-        console.log( index + item );
+    function myFunction(item) {
+        console.log(item.firstname);
     }
+
+
+    });
 
 
     // your code here

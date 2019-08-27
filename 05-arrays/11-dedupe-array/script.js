@@ -11,6 +11,9 @@
 
 (function() {
 
+
+    document.getElementById("run").addEventListener("click", function () {
+
     var fruits = [
         "cerise",
         "durian",
@@ -29,5 +32,9 @@
     ];
 
     // your code here
+    let dupli = [...new Set(fruits)];
+    console.log(dupli);
+
+});
 
 })();
