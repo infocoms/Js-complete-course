@@ -13,4 +13,24 @@
 
     // your code here
 
+
+    document.getElementById("run").addEventListener("click", function () {
+
+
+        // your code here
+
+        var inputf1 = document.getElementById("pass-one");
+        var inputf2 = document.getElementById("pass-two");
+
+        if (inputf1.value != inputf2.value) {
+            inputf1.value = "Error";
+            inputf2.value= "Error";
+
+        } else {
+            console.log("successful Match in input Fields!");
+        }
+
+    });
+
+
 })();

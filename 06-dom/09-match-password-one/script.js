@@ -9,8 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+    document.getElementById("run").addEventListener("click", function () {
 
-    // your code here
 
+        // your code here
+
+        var inputf1 = document.getElementById("pass-one");
+        var inputf2 = document.getElementById("pass-two");
+
+        if (inputf1.value != inputf2.value) {
+            inputf1.style.borderColor = "red";
+            inputf2.style.borderColor = "red";
+
+        } else {
+            console.log("successful Match!");
+            inputf1.style.borderColor = "";
+           inputf2.style.borderColor = "";
+        }
+
+    });
 })();

@@ -13,4 +13,31 @@
 
     // your code here
 
+    function tableCreate(){
+        var tbody = document.getElementById("target");
+        var tbl  = document.createElement('table');
+        tbl.style.width  = '100%';
+        tbl.style.border = '1px solid black';
+
+        for(var i = 1; i < 11; i++){
+            var tr = tbl.insertRow();
+            for(var j = 1; j < 11; j++){
+                if(i == 0 && j == 0){
+                    break;
+                } else {
+                    var td = tr.insertCell();
+                    td.appendChild(document.createTextNode(i*j));
+                    td.style.border = '1px solid black';
+                    if(i == 0 && j == 0){
+                        td.setAttribute('rowSpan', '10');
+                    }
+                }
+            }
+        }
+        tbody.appendChild(tbl);
+    }
+    tableCreate();
+
+
+
 })();
