@@ -8,9 +8,33 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+var y = Math.floor(Math.random() * 100 + 1);
+var guess = 1;
+(function loopy() {
 
-(function() {
 
-    // your code here
+        var x = window.prompt("Guess the number");
+
+        if (x == y) {
+
+            alert("That's it "
+                + guess + " guesses ");
+            return;
+        } else if (x > y) {
+            guess++;
+            alert("Smaller");
+            console.log(x);
+            console.log(y);
+            loopy()
+
+        } else {
+            guess++;
+            alert("Higher");
+            console.log(x);
+            console.log(y);
+            loopy()
+        }
+
+
 
 })();

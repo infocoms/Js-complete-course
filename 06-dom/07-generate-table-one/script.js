@@ -19,9 +19,9 @@
         tbl.style.width  = '100%';
         tbl.style.border = '1px solid black';
 
-        for(var i = 0; i < 1; i++){
+        for(var i = 0; i < 10; i++){
             var tr = tbl.insertRow();
-            for(var j = 0; j < 10; j++){
+            for(var j = 0; j < 1; j++){
                 if(i == 2 && j == 1){
                     break;
                 } else {

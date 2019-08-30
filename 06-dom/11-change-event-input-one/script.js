@@ -23,7 +23,6 @@
 
         document.getElementById("counter").innerHTML = resultcount + "/10";
         if (pass.value.length > 10) {
-
             pass.value = pass.value.slice(0, 10);
 
         }

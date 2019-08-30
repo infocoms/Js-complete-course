@@ -8,9 +8,26 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
+var lastname = localStorage.getItem("num");
 (function() {
 
     // your code here
+    document.getElementById("increment").addEventListener("click", buttonClick);
+    var data = document.getElementById("target").innerText;
+    var i = data;
+    document.getElementById("target").innerHTML = lastname;
+    console.log(i);
+    function buttonClick() {
+        i++;
+        localStorage.setItem("num",i);
+        document.getElementById("target").innerHTML = i;
+
+    }
+
+
+
+
+    //window.localStorage.setItem('user', JSON.stringify(lastname));
+
 
 })();

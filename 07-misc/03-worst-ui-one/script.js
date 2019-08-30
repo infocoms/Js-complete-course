@@ -12,5 +12,10 @@
 (function() {
 
     // your code here
-
+    var slider = document.getElementById("slider");
+    var output = document.getElementById("target");
+    output.innerHTML = "0"+slider.value;
+    slider.oninput = function(){
+        output.innerHTML = "0"+this.value;
+    }
 })();

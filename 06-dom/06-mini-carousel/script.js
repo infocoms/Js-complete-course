@@ -29,7 +29,6 @@
     function myFunction2() {
         var randomValue = gallery[Math.floor(Math.random() * gallery.length)];
         imaagesr[0].src = randomValue;
-        console.log(randomValue);
     }
 
 
